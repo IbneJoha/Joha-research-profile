@@ -3,46 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Ibne Joha - Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact - Md. Ibne Joha</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9fafb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
         }
-        .navbar {
-            background-color: #1f2937;
-            position: sticky;
-            top: 0;
-            z-index: 10;
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main h2 {
+            color: #1a252f;
+        }
+        main p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #1a252f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Md. Ibne Joha</h1>
-            <div class="space-x-4">
-                <a href="index.html" class="hover:text-gray-300">Home</a>
-                <a href="education.html" class="hover:text-gray-300">Education</a>
-                <a href="publications.html" class="hover:text-gray-300">Publications</a>
-                <a href="contact.html" class="hover:text-gray-300">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <h1>Md. Ibne Joha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="publication.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Contact Content -->
-    <div class="container mx-auto p-6">
-        <h2 class="text-3xl font-bold mb-4">Contact</h2>
-        <p class="text-lg">Email: <a href="mailto:ibne.joha17@gmail.com" class="text-blue-500 hover:underline">ibne.joha17@gmail.com</a> | <a href="mailto:ibne.joha@kookmin.ac.kr" class="text-blue-500 hover:underline">ibne.joha@kookmin.ac.kr</a></p>
-        <p class="text-lg">Google Scholar: <a href="https://scholar.google.com/citations?user=FIHHR6uc.AAAAAJ" class="text-blue-500 hover:underline">/citations/user=FIHHR6uc.AAAAAJ</a></p>
-        <p class="text-lg">ResearchGate: <a href="https://researchgate.net/profile/Md-Joha" class="text-blue-500 hover:underline">/researchgate.net/profile/Md-Joha</a></p>
-        <p class="text-lg">LinkedIn: <a href="https://linkedin.com/in/ibne.joha" class="text-blue-500 hover:underline">/linkedin.com/in/ibne.joha</a></p>
-    </div>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ibne.joha17@gmail.com">ibne.joha17@gmail.com</a> | <a href="mailto:ibne.joha@kookmin.ac.kr">ibne.joha@kookmin.ac.kr</a></p>
+            <p>Google Scholar: <a href="https://scholar.google.com/citations?user=FIHHR6ucAAAAAJ">Profile</a></p>
+            <p>ResearchGate: <a href="https://www.researchgate.net/profile/Md-Joha">Profile</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ibne-joha">Profile</a></p>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4 mt-6">
+    <footer>
         <p>© 2025 Md. Ibne Joha. All rights reserved.</p>
     </footer>
 </body>
