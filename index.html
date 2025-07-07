@@ -9,7 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
             background-color: #1a252f;
@@ -40,16 +41,52 @@
         nav ul li a:hover {
             color: #ddd;
         }
-        main {
-            padding: 20px;
-            text-align: center;
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
-        main h2 {
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .sidebar h2 {
+            margin-top: 0;
             color: #1a252f;
         }
-        main p {
-            max-width: 600px;
-            margin: 0 auto;
+        .sidebar p {
+            margin: 5px 0;
+        }
+        .sidebar a {
+            color: #1a252f;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .main-content h2 {
+            color: #1a252f;
+        }
+        .main-content p {
             line-height: 1.6;
         }
         footer {
@@ -57,34 +94,44 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Md. Ibne Joha</h1>
+        <h1>🌟 Md. Ibne Joha</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="publication.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="education.html">🎓 Education</a></li>
+                <li><a href="publication.html">📚 Publications</a></li>
+                <li><a href="contact.html">📧 Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I am Md. Ibne Joha, a Master's student in Electronics Engineering at Kookmin University, South Korea. My research focuses on advanced AI models for real-time applications, including Non-Intrusive Load Monitoring (NILM) and battery state estimation. I am passionate about leveraging cutting-edge technology to solve complex engineering problems.</p>
-        </section>
-    </main>
+    <div class="container">
+        <div class="sidebar">
+            <img src="md_ibne_joha.jpg" alt="😄 Md. Ibne Joha">
+            <h2>🎉 Md. Ibne Joha</h2>
+            <p>🏫 Master's Student at Kookmin University</p>
+            <p>🇰🇷 South Korea</p>
+            <p><a href="mailto:ibne.joha17@gmail.com">📩 ibne.joha17@gmail.com</a></p>
+            <p><a href="mailto:ibne.joha@kookmin.ac.kr">📥 ibne.joha@kookmin.ac.kr</a></p>
+            <p><a href="https://scholar.google.com/citations?user=FIHHR6uc.AAAAAJ">🎓 Google Scholar</a></p>
+            <p><a href="https://researchgate.net/profile/Md-Joha">🔬 ResearchGate</a></p>
+            <p><a href="https://linkedin.com/in/ibne.joha">💼 LinkedIn</a></p>
+        </div>
+        <div class="main-content">
+            <h2>🚀 Let's Explore AI & Engineering Together!</h2>
+            <h3>🌐 About Me</h3>
+            <p>😊 Hello! I am Md. Ibne Joha, a Master's student in Electronics Engineering at Kookmin University, South Korea 🇰🇷. My research focuses on advanced AI models for real-time applications, including Non-Intrusive Load Monitoring (NILM) 🔋 and battery state estimation ⚡. I am passionate about leveraging cutting-edge technology to solve complex engineering problems 🛠️.</p>
+        </div>
+    </div>
 
     <footer>
-        <p>© 2025 Md. Ibne Joha. All rights reserved.</p>
+        <p>✨ © 2025 Md. Ibne Joha. All rights reserved.</p>
     </footer>
 </body>
 </html>
