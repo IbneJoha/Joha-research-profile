@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Md. Ibne Joha, Master's student in Electronics Engineering at Kookmin University">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Md. Ibne Joha</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(135deg, #f9f9f9 0%, #e8ecef 100%);
             color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #1a252f;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 28px;
         }
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
         }
         nav ul li {
             margin-left: 20px;
@@ -37,101 +44,140 @@
             color: #fff;
             text-decoration: none;
             font-size: 16px;
+            transition: color 0.3s ease;
         }
         nav ul li a:hover {
-            color: #ddd;
+            color: #a3bffa;
         }
         .container {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
             max-width: 1200px;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 0 20px 60px; /* Added padding-bottom to prevent content overlap with fixed footer */
         }
         .sidebar {
-            width: 30%;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .sidebar:hover {
+            transform: translateY(-5px);
         }
         .sidebar img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin-bottom: 15px;
+            border: 3px solid #1a252f;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .sidebar h2 {
             margin-top: 0;
             color: #1a252f;
+            font-size: 24px;
         }
         .sidebar p {
-            margin: 5px 0;
+            margin: 10px 0;
+            font-size: 16px;
         }
         .sidebar a {
             color: #1a252f;
             text-decoration: none;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
         }
         .sidebar a:hover {
+            color: #4a90e2;
             text-decoration: underline;
         }
         .main-content {
-            width: 70%;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .main-content:hover {
+            transform: translateY(-5px);
         }
         .main-content h2 {
             color: #1a252f;
+            font-size: 26px;
         }
         .main-content p {
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 16px;
         }
         footer {
             background-color: #1a252f;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding-bottom: 80px; /* Increased padding for mobile to account for fixed footer */
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🌟 Md. Ibne Joha</h1>
+        <h1><span aria-hidden="true">🌟</span> Md. Ibne Joha</h1>
         <nav>
             <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="education.html">🎓 Education</a></li>
-                <li><a href="publication.html">📚 Publications</a></li>
-                <li><a href="contact.html">📧 Contact</a></li>
+                <li><a href="index.html"><span aria-hidden="true">🏠</span> Home</a></li>
+                <li><a href="education.html"><span aria-hidden="true">🎓</span> Education</a></li>
+                <li><a href="publication.html"><span aria-hidden="true">📚</span> Publications</a></li>
+                <li><a href="contact.html"><span aria-hidden="true">📧</span> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
         <div class="sidebar">
-            <img src="Joha.png" alt="😄 Md. Ibne Joha">
-            <h2>🎉 Md. Ibne Joha</h2>
-            <p>🏫 Master's Student at Kookmin University</p>
-            <p>🇰🇷 South Korea</p>
-            <p><a href="mailto:ibne.joha17@gmail.com">📩 ibne.joha17@gmail.com</a></p>
-            <p><a href="mailto:ibne.joha@kookmin.ac.kr">📥 ibne.joha@kookmin.ac.kr</a></p>
-            <p><a href="https://scholar.google.com/citations?user=FIHHR6uc.AAAAAJ">🎓 Google Scholar</a></p>
-            <p><a href="https://researchgate.net/profile/Md-Joha">🔬 ResearchGate</a></p>
-            <p><a href="https://linkedin.com/in/ibne.joha">💼 LinkedIn</a></p>
+            <img src="Joha.png" alt="Profile picture of Md. Ibne Joha">
+            <h2><span aria-hidden="true">🎉</span> Md. Ibne Joha</h2>
+            <p><span aria-hidden="true">🏫</span> Master's Student at Kookmin University</p>
+            <p><span aria-hidden="true">🇰🇷</span> South Korea</p>
+            <p><a href="mailto:ibne.joha17@gmail.com"><span aria-hidden="true">📩</span> ibne.joha17@gmail.com</a></p>
+            <p><a href="mailto:ibne.joha@kookmin.ac.kr"><span aria-hidden="true">📥</span> ibne.joha@kookmin.ac.kr</a></p>
+            <p><a href="https://scholar.google.com/citations?user=FIHHR6ucAAAAAJ"><span aria-hidden="true">🎓</span> Google Scholar</a></p>
+            <p><a href="https://www.researchgate.net/profile/Md-Joha"><span aria-hidden="true">🔬</span> ResearchGate</a></p>
+            <p><a href="https://www.linkedin.com/in/ibne-joha"><span aria-hidden="true">💼</span> LinkedIn</a></p>
         </div>
         <div class="main-content">
-            <!-- <h2>🚀 Let's Explore AI & Engineering Together!</h2> -->
-            <h2>🌐 About Me</h3>
-            <p>😊 Hello! I am Md. Ibne Joha, a Master's student in Electronics Engineering at Kookmin University, South Korea 🇰🇷. My research focuses on advanced AI models for real-time applications, including Non-Intrusive Load Monitoring (NILM) 🔋 and battery state estimation ⚡. I am passionate about leveraging cutting-edge technology to solve complex engineering problems 🛠️.</p>
+            <h2><span aria-hidden="true">🌐</span> About Me</h2>
+            <p>Hello! I am Md. Ibne Joha, a Master's student in Electronics Engineering at Kookmin University, South Korea <span aria-hidden="true">🇰🇷</span>. My research focuses on advanced AI models for real-time applications, including Non-Intrusive Load Monitoring (NILM) <span aria-hidden="true">🔋</span> and battery state estimation <span aria-hidden="true">⚡</span>. I am passionate about leveraging cutting-edge technology to solve complex engineering problems <span aria-hidden="true">🛠️</span>.</p>
         </div>
     </div>
 
     <footer>
-        <p>✨ © 2025 Md. Ibne Joha. All rights reserved.</p>
+        <p><span aria-hidden="true">✨</span> © <script>document.write(new Date().getFullYear());</script> Md. Ibne Joha. All rights reserved.</p>
     </footer>
 </body>
 </html>
