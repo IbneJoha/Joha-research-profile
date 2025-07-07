@@ -55,7 +55,7 @@
             gap: 20px;
             max-width: 1200px;
             margin: 20px auto;
-            padding: 0 20px 60px; /* Added padding-bottom to prevent content overlap with fixed footer */
+            padding: 0 20px 60px;
         }
         .sidebar {
             padding: 20px;
@@ -113,6 +113,12 @@
             line-height: 1.8;
             font-size: 16px;
         }
+        .main-content hr {
+            border: 0;
+            height: 1px;
+            background: #e8ecef;
+            margin: 20px 0;
+        }
         footer {
             background-color: #1a252f;
             color: #fff;
@@ -126,7 +132,7 @@
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr;
-                padding-bottom: 80px; /* Increased padding for mobile to account for fixed footer */
+                padding-bottom: 80px;
             }
             .sidebar, .main-content {
                 width: 100%;
@@ -172,6 +178,7 @@
         </div>
         <div class="main-content">
             <h2><span aria-hidden="true">🌐</span> About Me</h2>
+            <hr>
             <p>Hello! I am Md. Ibne Joha, a Master's student in Electronics Engineering at Kookmin University, South Korea <span aria-hidden="true">🇰🇷</span>. My research focuses on advanced AI models for real-time applications, including Non-Intrusive Load Monitoring (NILM) <span aria-hidden="true">🔋</span> and battery state estimation <span aria-hidden="true">⚡</span>. I am passionate about leveraging cutting-edge technology to solve complex engineering problems <span aria-hidden="true">🛠️</span>.</p>
         </div>
     </div>
