@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational background of Md. Ibne Joha">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Education - Md. Ibne Joha</title>
     <style>
         body {
@@ -10,6 +12,9 @@
             margin: 0;
             padding: 0;
             background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #1a252f;
@@ -28,6 +33,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
         }
         nav ul li {
             margin-left: 20px;
@@ -43,13 +49,14 @@
         main {
             padding: 20px;
             text-align: center;
+            flex: 1;
         }
         main h2 {
             color: #1a252f;
         }
         main p {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 10px auto;
             line-height: 1.6;
         }
         footer {
@@ -57,21 +64,31 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🌟 Md. Ibne Joha</h1>
+        <h1><span aria-hidden="true">🌟</span> Md. Ibne Joha</h1>
         <nav>
             <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="education.html">🎓 Education</a></li>
-                <li><a href="publication.html">📚 Publications</a></li>
-                <li><a href="contact.html">📧 Contact</a></li>
+                <li><a href="index.html"><span aria-hidden="true">🏠</span> Home</a></li>
+                <li><a href="education.html"><span aria-hidden="true">🎓</span> Education</a></li>
+                <li><a href="publication.html"><span aria-hidden="true">📚</span> Publications</a></li>
+                <li><a href="contact.html"><span aria-hidden="true">📧</span> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -84,7 +101,7 @@
     </main>
 
     <footer>
-        <p>© 2025 Md. Ibne Joha. All rights reserved.</p>
+        <p>© <script>document.write(new Date().getFullYear());</script> Md. Ibne Joha. All rights reserved.</p>
     </footer>
 </body>
 </html>
