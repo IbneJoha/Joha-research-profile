@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publications by Md. Ibne Joha">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Publications - Md. Ibne Joha</title>
     <style>
         body {
@@ -10,6 +12,9 @@
             margin: 0;
             padding: 0;
             background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #1a252f;
@@ -28,6 +33,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
         }
         nav ul li {
             margin-left: 20px;
@@ -43,13 +49,23 @@
         main {
             padding: 20px;
             text-align: center;
+            flex: 1;
         }
         main h2 {
             color: #1a252f;
         }
+        main ol {
+            max-width: 600px;
+            margin: 10px auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+        main ol li {
+            margin-bottom: 20px;
+        }
         main p {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 10px auto;
             line-height: 1.6;
         }
         footer {
@@ -57,21 +73,31 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🌟 Md. Ibne Joha</h1>
+        <h1><span aria-hidden="true">🌟</span> Md. Ibne Joha</h1>
         <nav>
             <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="education.html">🎓 Education</a></li>
-                <li><a href="publication.html">📚 Publications</a></li>
-                <li><a href="contact.html">📧 Contact</a></li>
+                <li><a href="index.html"><span aria-hidden="true">🏠</span> Home</a></li>
+                <li><a href="education.html"><span aria-hidden="true">🎓</span> Education</a></li>
+                <li><a href="publication.html"><span aria-hidden="true">📚</span> Publications</a></li>
+                <li><a href="contact.html"><span aria-hidden="true">📧</span> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -79,13 +105,24 @@
     <main>
         <section>
             <h2>Publications</h2>
-            <p>[3] Md Shahriar Nazim, Md Min Hazur Rah4man, Md Ibne Joha, and Yeong Min Jang<br>An RNN-CNN-Based Parallel Hybrid Approach for Battery State of Charge (SOC) Estimation Under Various Temperatures and Discharging Cycles<br>[Journal/Conference], [Year] - (Incomplete data, placeholder)<br><a href="#">DOI/Link</a></p>
-            <p>An Efficient AI Model for Real-time Non-Intrusive Load Monitoring within a Secure Edge Computing Environment<br>Md. Ibne Joha et al.<br>[Journal/Conference], [Year] - (Incomplete data, placeholder)<br><a href="#">DOI/Link</a></p>
+            <ol>
+                <li>
+                    Md Shahriar Nazim, Md Min Hazur Rahman, Md Ibne Joha, and Yeong Min Jang.<br>
+                    An RNN-CNN-Based Parallel Hybrid Approach for Battery State of Charge (SOC) Estimation Under Various Temperatures and Discharging Cycles.<br>
+                    Contact for publication details and DOI.
+                </li>
+                <li>
+                    Md. Ibne Joha et al.<br>
+                    An Efficient AI Model for Real-time Non-Intrusive Load Monitoring within a Secure Edge Computing Environment.<br>
+                    Contact for publication details and DOI.
+                </li>
+            </ol>
+            <p>For more information or to access full publication details, please <a href="contact.html">contact me</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Md. Ibne Joha. All rights reserved.</p>
+        <p>© <script>document.write(new Date().getFullYear());</script> Md. Ibne Joha. All rights reserved.</p>
     </footer>
 </body>
 </html>
