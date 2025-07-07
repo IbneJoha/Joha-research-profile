@@ -16,6 +16,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            text-align: left;
         }
         header {
             background-color: #1a252f;
@@ -74,7 +75,7 @@
             margin-bottom: 15px;
             border: 3px solid #1a252f;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transform: scaleY(1.1); /* Slightly stretch vertically for elliptical shape */
+            transform: scaleY(1.1);
         }
         .sidebar h2 {
             margin-top: 0;
@@ -111,8 +112,9 @@
             font-size: 26px;
         }
         .main-content p {
-            line-height: 1.8;
+            line-height: 1.4;
             font-size: 16px;
+            margin: 10px 0;
         }
         .main-content hr {
             border: 0;
@@ -123,7 +125,6 @@
         footer {
             background-color: #1a252f;
             color: #fff;
-            text-align: center;
             padding: 15px;
             position: fixed;
             bottom: 0;
@@ -140,10 +141,9 @@
             }
             header {
                 flex-direction: column;
-                text-align: center;
+                align-items: flex-start;
             }
             nav ul {
-                justify-content: center;
                 margin-top: 10px;
             }
             nav ul li {
@@ -180,7 +180,9 @@
         <div class="main-content">
             <h2><span aria-hidden="true">🌐</span> About Me</h2>
             <hr>
-            <p>Hello! I am Md. Ibne Joha, a Master's student in Electronics Engineering at Kookmin University, South Korea <span aria-hidden="true">🇰🇷</span>. My research focuses on advanced AI models for real-time applications, including Non-Intrusive Load Monitoring (NILM) <span aria-hidden="true">🔋</span> and battery state estimation <span aria-hidden="true">⚡</span>. I am passionate about leveraging cutting-edge technology to solve complex engineering problems <span aria-hidden="true">🛠️</span>.</p>
+            <p>Md. Ibne Joha is a graduate researcher at the Wireless Communications and Artificial Intelligence (WiComAI) Lab, Kookmin University, Seoul, South Korea, where he is pursuing his M.Sc. in Electronics Engineering with a perfect CGPA of 4.5/4.5. His research focuses on AI-driven solutions for Industrial Internet of Things (IIoT), edge computing, and smart energy management, including work on federated learning techniques. His work integrates deep learning models with real-time energy forecasting, anomaly detection, and non-intrusive load monitoring (NILM) within secure, resource-constrained environments.<span aria-hidden="true">🇰🇷</span></p>
+            <p>He has contributed to multiple government and industry-funded projects involving real-time photovoltaic (PV) power forecasting across 10 solar sites and AI-based environmental monitoring. Joha has made significant contributions through multiple publications in reputed journals, including Sensors, Applied Sciences, IEEE Access, and the World Electric Vehicle Journal, among others. His work integrates advanced AI models—such as the TCN-GRU-Attention framework for load forecasting and the ARBGTU-Net-NILM architecture for appliance-level load disaggregation—optimized for deployment on edge devices. The proposed NILM model has demonstrated significant improvements in disaggregation accuracy on both the REDD dataset and real-world energy consumption data. Additionally, he has developed a secure IIoT framework incorporating TLS/SSL protocols and encrypted credentials to ensure data integrity and industrial-grade reliability.<span aria-hidden="true">⚡</span></p>
+            <p>His achievements include the Excellent Researcher Scholarship, the Best Paper Award at IEEE ICPC2T 2024, and multiple certificates for conference presentations. Joha brings hands-on experience with deep learning frameworks such as TensorFlow and PyTorch and is proficient in Python and C/C++. He has worked extensively with hardware platforms including Raspberry Pi, Jetson Nano, Arduino, Nexys4 DDR Artix-7 FPGA, and ESP32, effectively bridging theoretical research with practical system implementation. His technical toolkit also includes real-time dashboard development using Node-RED and Grafana, as well as simulation and design tools like MATLAB/Simulink and Altium. Joha remains deeply committed to advancing secure, efficient, and sustainable AIoT solutions for future-ready applications in smart energy, edge AI, and distributed systems, with a focus on optimizing energy efficiency and reliability in smart grids, microgrids, and edge-AI-powered environments.<span aria-hidden="true">🛠️</span></p>
         </div>
     </div>
 
