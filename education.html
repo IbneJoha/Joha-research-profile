@@ -15,7 +15,6 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center all content horizontally */
         }
         header {
             background-color: #1a252f;
@@ -25,9 +24,6 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            width: 100%;
-            max-width: 1200px; /* Limit header width */
-            box-sizing: border-box;
         }
         header h1 {
             margin: 0;
@@ -53,28 +49,23 @@
         }
         main {
             padding: 40px 20px;
-            text-align: left;
             flex: 2;
             min-height: 66vh;
             width: 100%;
-            max-width: 1000px; /* Limit main content width */
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center; /* Center main content */
+            max-width: 1000px; /* Constrain width to match original proportions */
+            margin: 0 auto; /* Center the main section */
         }
         main h2 {
             color: #1a252f;
             font-size: 24px;
-            text-align: center; /* Center the heading */
-            width: 100%;
+            text-align: center; /* Center the Education heading */
+            margin-bottom: 20px;
         }
         main .education-item {
             display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 1000px;
+            justify-content: space-between; /* Two-column layout */
+            width: 100%; /* Full width of constrained main */
             margin: 10px 0;
-            padding-right: 0; /* Remove right padding to balance centering */
         }
         main .education-spacer {
             height: 20px;
@@ -85,21 +76,19 @@
             font-size: 16px;
         }
         main .education-item .left {
-            text-align: left;
+            text-align: left; /* Left-align institution and degree */
             font-weight: bold;
+            flex: 1; /* Take available space */
         }
         main .education-item .right {
-            text-align: right;
-            min-width: 300px;
+            text-align: left; /* Left-align location and dates */
+            min-width: 200px; /* Reduced to prevent overflow, maintain readability */
         }
         footer {
             background-color: #1a252f;
             color: #fff;
             text-align: center;
             padding: 8px;
-            width: 100%;
-            max-width: 1200px; /* Limit footer width */
-            box-sizing: border-box;
         }
         @media (max-width: 600px) {
             header {
@@ -116,13 +105,17 @@
             main {
                 padding: 20px;
                 min-height: 60vh;
+                max-width: 100%; /* Full width on small screens */
             }
             main .education-item {
-                max-width: 100%;
-                padding-right: 0;
+                flex-direction: column; /* Stack items vertically on small screens */
+                align-items: flex-start; /* Left-align items */
             }
+            main .education-item .left,
             main .education-item .right {
-                min-width: 0;
+                text-align: left; /* Ensure left alignment */
+                min-width: 0; /* Remove min-width constraint */
+                margin: 5px 0; /* Add spacing between stacked items */
             }
         }
     </style>
@@ -148,7 +141,7 @@
                 <p class="right">Seoul, South Korea</p>
             </div>
             <div class="education-item">
-                <p class="left">📚 Masters of Science in Electronics Engineering — Current CGPA : 4.5 / 4.5</p>
+                <p class="left">📚 Masters of Science in Electronics Engineering — Current CGPA: 4.5 / 4.5</p>
                 <p class="right">Sept 2023 - July 2025</p>
             </div>
             <div class="education-spacer"></div>
@@ -157,7 +150,7 @@
                 <p class="right">Khulna, Bangladesh</p>
             </div>
             <div class="education-item">
-                <p class="left">📚 Bachelor of Science in Electrical and Electronic Engineering — CGPA : 3.15 / 4.0</p>
+                <p class="left">📚 Bachelor of Science in Electrical and Electronic Engineering — CGPA: 3.15 / 4.0</p>
                 <p class="right">Jan 2018 - Feb 2023</p>
             </div>
             <div class="education-spacer"></div>
@@ -166,7 +159,7 @@
                 <p class="right">Bogura, Bangladesh</p>
             </div>
             <div class="education-item">
-                <p class="left">📚 Higher Secondary Certificate — CGPA : 5.0 / 5.0</p>
+                <p class="left">📚 Higher Secondary Certificate — CGPA: 5.0 / 5.0</p>
                 <p class="right">2015 - 2017</p>
             </div>
             <div class="education-spacer"></div>
