@@ -24,7 +24,6 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            
         }
         header h1 {
             margin: 0;
@@ -56,10 +55,88 @@
         main h2 {
             color: #1a252f;
         }
-        main p {
-            max-width: 600px;
-            margin: 10px auto;
-            line-height: 1.6;
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-left, .contact-right {
+            flex: 1;
+            padding: 20px;
+        }
+        .contact-left .contact-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .contact-left .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .contact-left ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-left ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px;
+            background-color: #fff;
+            border-left: 4px solid #1a252f;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .contact-left ul li:hover {
+            background-color: #f0f0f0;
+        }
+        .contact-left ul li::before {
+            content: attr(data-emoji);
+            margin-right: 12px;
+            font-size: 22px;
+        }
+        .contact-left a {
+            color: #1a252f;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-left a:hover {
+            text-decoration: underline;
+            color: #2c5282;
+        }
+        .contact-right {
+            text-align: left;
+        }
+        .contact-right .address-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .contact-right .address-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-right .address-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #1a252f;
+            text-align: center;
+        }
+        .contact-right .address-card p {
+            margin: 5px 0;
+            font-size: 16px;
+            text-align: center;
+            white-space: pre-wrap;
+        }
+        .contact-right .address-card p::before {
+            content: attr(data-emoji);
+            margin-right: 10px;
+            font-size: 20px;
         }
         footer {
             background-color: #1a252f;
@@ -78,6 +155,14 @@
             }
             nav ul li {
                 margin: 0 10px;
+            }
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-left, .contact-right {
+                padding: 10px;
+                width: 100%;
             }
         }
     </style>
@@ -99,10 +184,29 @@
     <main>
         <section>
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:ibne.joha17@gmail.com">ibne.joha17@gmail.com</a> | <a href="mailto:ibne.joha@kookmin.ac.kr">ibne.joha@kookmin.ac.kr</a></p>
-            <p>Google Scholar: <a href="https://scholar.google.com/citations?user=FIHHR6ucAAAAAJ">Profile</a></p>
-            <p>ResearchGate: <a href="https://www.researchgate.net/profile/Md-Joha">Profile</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ibne-joha">Profile</a></p>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-card">
+                        <ul>
+                            <li data-emoji="📩">ibne.joha17@gmail.com</li>
+                            <li data-emoji="📬">ibne.joha@kookmin.ac.kr</li>
+                            <li data-emoji="🔍"><a href="https://scholar.google.com/citations?user=f1HR6ucAAAAJ&hl=en">Google Scholar</a></li>
+                            <li data-emoji="🔬"><a href="https://www.researchgate.net/profile/Md-Joha">ResearchGate</a></li>
+                            <li data-emoji="💼"><a href="https://www.linkedin.com/in/ibnejoha/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="address-card" data-emoji="🏠">
+                        <h3><strong>Present Address</strong></h3>
+                        <p>Kookmin University, Jeongneung-dong, Seongbuk-gu, Seoul, South Korea</p>                   
+                    </div>
+                    <div class="address-card" data-emoji="🏡">
+                        <h3><strong>Permanent Address</strong></h3>
+                        <p>House #2, Road #1, Dokkhin Para, Langlu Hat, Gubtoli, Bogura, Bangladesh</p>                   
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
