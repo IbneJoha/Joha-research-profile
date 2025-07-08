@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research by Md. Ibne Joha">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Research - Md. Ibne Joha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        main h2 {
+            color: #1a252f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .research-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .research-image {
+            flex: 0 0 40%;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .research-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .research-description {
+            flex: 1;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .research-description h3 {
+            color: #1a252f;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .research-description p {
+            margin: 0 0 10px;
+        }
+        footer {
+            background-color: #1a252f;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            main {
+                padding: 20px;
+                max-width: 100%;
+            }
+            .research-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .research-image {
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span aria-hidden="true">🌟</span> Md. Ibne Joha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span aria-hidden="true">🏠</span> Home</a></li>
+                <li><a href="education.html"><span aria-hidden="true">🎓</span> Education</a></li>
+                <li><a href="publication.html"><span aria-hidden="true">📚</span> Publications</a></li>
+                <li><a href="research.html"><span aria-hidden="true">🔬</span> Research</a></li>
+                <li><a href="contact.html"><span aria-hidden="true">📧</span> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Research</h2>
+            <p>My research focuses on leveraging advanced AI techniques to solve real-world challenges in IoT and energy systems.</p>
+            <p>I explore innovative solutions for load forecasting, environmental monitoring, and battery management.</p>
+            <p>Collaboration with interdisciplinary teams drives my work on optical communication and smart energy systems.</p>
+            <p>The goal is to enhance system reliability and efficiency through cutting-edge technology.</p>
+            <p>Stay tuned for ongoing projects and future publications in these exciting fields.</p>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research1.jpg" alt="AI-Driven Load Forecasting">
+                </div>
+                <div class="research-description">
+                    <h3>AI-Driven Load Forecasting</h3>
+                    <p>Developing AI models for real-time short-term active and reactive load forecasting in secure IIoT environments, integrating anomaly detection for enhanced system reliability.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research2.jpg" alt="Environmental Monitoring">
+                </div>
+                <div class="research-description">
+                    <h3>IoT-Based Environmental Monitoring</h3>
+                    <p>Researching IoT-based systems for environmental monitoring, leveraging AI for real-time data analysis and power forecasting to optimize resource usage.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research3.jpg" alt="Battery State of Charge Estimation">
+                </div>
+                <div class="research-description">
+                    <h3>Battery State of Charge Estimation</h3>
+                    <p>Exploring hybrid RNN-CNN models for accurate battery state of charge (SoC) estimation under varying temperatures and noisy conditions, applicable to electric vehicles.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research4.jpg" alt="Optical Camera Communication">
+                </div>
+                <div class="research-description">
+                    <h3>Optical Camera Communication</h3>
+                    <p>Enhancing optical camera communication performance using positioning information for collaborative communication systems, improving data transmission efficiency.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research5.jpg" alt="Non-Intrusive Load Monitoring">
+                </div>
+                <div class="research-description">
+                    <h3>Non-Intrusive Load Monitoring</h3>
+                    <p>Designing ARBGTU-NetNILM, an AI-based architecture for real-time load disaggregation in resource-constrained edge environments, ensuring security and efficiency.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research6.jpg" alt="EV Battery Health Estimation">
+                </div>
+                <div class="research-description">
+                    <h3>EV Battery Health Estimation</h3>
+                    <p>Conducting systematic reviews on AI techniques for estimating the state of health and remaining useful life of electric vehicle batteries, advancing battery management systems.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research7.jpg" alt="OFDM Modulation for OCC">
+                </div>
+                <div class="research-description">
+                    <h3>OFDM Modulation for OCC</h3>
+                    <p>Implementing OFDM modulation with UNet-based equalizers for signal denoising and BER optimization in optical camera communication systems, enabling robust data transfer.</p>
+                </div>
+            </div>
+            <div class="research-container">
+                <div class="research-image">
+                    <img src="research8.jpg" alt="Smart Energy Systems">
+                </div>
+                <div class="research-description">
+                    <h3>Smart Energy Systems</h3>
+                    <p>Developing IoT-based smart energy monitoring, management, and protection systems for microgrids and smart homes, integrating real-time control and protection mechanisms.</p>
+                </div>
+            </div>
+            <p>For more information about my research or to discuss potential collaborations, please <a href="contact.html">contact me</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><span aria-hidden="true">✨</span> © <script>document.write(new Date().getFullYear());</script> Md. Ibne Joha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
