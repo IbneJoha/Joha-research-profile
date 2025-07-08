@@ -48,9 +48,10 @@
             color: #ddd;
         }
         main {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: left;
-            flex: 1;
+            flex: 2;
+            min-height: 66vh;
         }
         main h2 {
             color: #1a252f;
@@ -60,8 +61,12 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            max-width: 600px;
+            max-width: 1000px;
             margin: 10px 0;
+            padding-right: 300px;
+        }
+        main .education-spacer {
+            height: 20px;
         }
         main .education-item p {
             margin: 0;
@@ -74,6 +79,7 @@
         }
         main .education-item .right {
             text-align: right;
+            min-width: 300px;
         }
         footer {
             background-color: #1a252f;
@@ -92,6 +98,17 @@
             }
             nav ul li {
                 margin: 0 10px;
+            }
+            main {
+                padding: 20px;
+                min-height: 60vh;
+            }
+            main .education-item {
+                max-width: 100%;
+                padding-right: 20px;
+                .right {
+                    min-width: 0;
+                }
             }
         }
     </style>
@@ -120,22 +137,25 @@
                 <p class="left">📚 Masters of Science in Electronics Engineering — Current CGPA : 4.5 / 4.5</p>
                 <p class="right">Sept 2023 - July 2025</p>
             </div>
+            <div class="education-spacer"></div>
             <div class="education-item">
                 <p class="left">🎓 • Khulna University of Engineering & Technology</p>
                 <p class="right">Khulna, Bangladesh</p>
             </div>
             <div class="education-item">
-                <p class="left">📚 Bachelor of Science in Electrical and Electronic Engineering — CGPA : 3.15 / 4.00</p>
+                <p class="left">📚 Bachelor of Science in Electrical and Electronic Engineering — CGPA : 3.15 / 4.0</p>
                 <p class="right">Jan 2018 - Feb 2023</p>
             </div>
+            <div class="education-spacer"></div>
             <div class="education-item">
                 <p class="left">🎓 • BIAM Model School & College</p>
                 <p class="right">Bogura, Bangladesh</p>
             </div>
             <div class="education-item">
-                <p class="left">📚 Higher Secondary Certificate — CGPA : 5.00 / 5.00</p>
+                <p class="left">📚 Higher Secondary Certificate — CGPA : 5.0 / 5.0</p>
                 <p class="right">2015 - 2017</p>
             </div>
+            <div class="education-spacer"></div>
         </section>
     </main>
 
