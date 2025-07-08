@@ -19,7 +19,7 @@
         header {
             background-color: #1a252f;
             color: #fff;
-            padding: 20px 40px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,7 +27,7 @@
         }
         header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 28px;
         }
         nav ul {
             list-style-type: none;
@@ -37,36 +37,35 @@
             flex-wrap: wrap;
         }
         nav ul li {
-            margin-left: 30px;
+            margin-left: 20px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
         }
         nav ul li a:hover {
             color: #ddd;
         }
         main {
-            padding: 40px;
+            padding: 20px;
             text-align: left;
             flex: 1;
-            width: 100%;
         }
         main h2 {
             color: #1a252f;
-            font-size: 28px;
-            margin-bottom: 10px;
+            font-size: 24px;
         }
         main .education-item {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            margin: 10px 0; /* Slightly increased space between entries */
+            max-width: 600px;
+            margin: 10px 0;
         }
         main .education-item p {
             margin: 0;
-            line-height: 1.4;
+            line-height: 1.6;
             font-size: 16px;
         }
         main .education-item .left {
@@ -80,34 +79,19 @@
             background-color: #1a252f;
             color: #fff;
             text-align: center;
-            padding: 15px;
-            width: 100%;
+            padding: 8px;
         }
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
                 text-align: center;
-                padding: 15px;
             }
             nav ul {
                 justify-content: center;
                 margin-top: 10px;
             }
             nav ul li {
-                margin: 0 15px;
-            }
-            main {
-                padding: 20px;
-            }
-            main h2 {
-                font-size: 24px;
-            }
-            main .education-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            main .education-item .right {
-                text-align: center;
+                margin: 0 10px;
             }
         }
     </style>
